@@ -1,0 +1,16 @@
+!!! 5
+
+html(ng-app="myApp", lang="en")
+	head
+		title= title
+		body
+			.container
+				block content
+			
+	!= js("lib/angular.min")
+	// Load Angular Configuration
+	!= js("app")
+	!= js("controllers")
+	!= js("directives")
+	!= js("filters")
+	!= js("services")
