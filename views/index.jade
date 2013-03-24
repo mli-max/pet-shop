@@ -1,16 +1,17 @@
-!!! 5
+!!! html
 
-html(ng-app="myApp", lang="en")
+html(ng-app="PetShop", lang="en")
 	head
-		title= title
+		meta(charset="utf-8")
+		title Pet-shop
+		!= css("app")
 		body
-			.container
-				block content
-			
+			ng-view
+
 	!= js("lib/angular.min")
-	// Load Angular Configuration
+	!= js("lib/angular-resource.min")
 	!= js("app")
+  != js("services")
 	!= js("controllers")
+  != js("filters")
 	!= js("directives")
-	!= js("filters")
-	!= js("services")

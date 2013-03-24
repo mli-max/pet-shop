@@ -1,4 +1,5 @@
 node_modules
 npm-debug.log
 config.js
-assets/js/lib/angular-*
+assets/js/lib/src/
+.idea/
