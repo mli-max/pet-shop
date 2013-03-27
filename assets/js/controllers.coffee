@@ -1,6 +1,6 @@
 "use strict"
 
-@PetsCtrl = ($scope, $http) ->
+angular.module("app").controller "PetsCtrl", ($scope) ->
   $scope.pets = [
     {type: 'cat', price: '$10'},
     {type: 'cat', price: '$15'},
