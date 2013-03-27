@@ -19,7 +19,7 @@ server.configure ->
   server.set "views", __dirname + "/views"
   server.set "view engine", "jade"
   server.use express.favicon()
-  server.use express.logger("dev")
+  server.use express.logger(':method :url')
   server.use express.bodyParser()
   server.use express.methodOverride()
   server.use assets()
@@ -27,7 +27,6 @@ server.configure ->
   server.use express.session()
   server.use server.router
   server.use express.static(path.join(__dirname, "public"))
-
 
 ###
 	Define routes
