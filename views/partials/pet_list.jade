@@ -1,4 +1,1 @@
-ul(ng-controller="PetsCtrl")
-  li(ng-repeat="pet in pets")
-    span {{pet.type}}
-    span {{pet.price}}
+div(ng-controller="PetsCtrl", class="gridStyle", ng-grid="gridOptions")

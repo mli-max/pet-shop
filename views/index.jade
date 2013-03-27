@@ -4,6 +4,7 @@ html(ng-app="app", lang="en")
   head
     meta(charset="utf-8")
     title Pet-shop
+    != css("ng-grid")
     != css("app")
     body
       div(ng-view)
@@ -11,6 +12,7 @@ html(ng-app="app", lang="en")
   != js("lib/jquery-1.9.1")
   != js("lib/angular")
   != js("lib/angular-resource")
+  != js("lib/ng-grid-2.0.2.debug")
   != js("app")
   != js("services")
   != js("controllers")

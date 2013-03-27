@@ -6,3 +6,5 @@ angular.module("app").controller "PetsCtrl", ($scope) ->
     {type: 'cat', price: '$15'},
     {type: 'dog', price: '$10'}
   ]
+
+  $scope.gridOptions = { data: 'pets' }
